@@ -14,19 +14,10 @@
   margin-bottom: 5px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
 .search-form__label {
   display: flex;
-  width: fit-content;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-form__label:focus {
@@ -86,11 +77,15 @@
   margin-right: 5px;
   border: 1px solid var(--white-color);
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox {
-  background-image: url('./images/checkbox-checked.svg');
-  background-size: contain;
-  position: center;
-  background-repeat: no-repeat;
+input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
+  display: block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: var(--white-color);
 }
