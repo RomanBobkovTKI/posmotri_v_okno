@@ -1,6 +1,6 @@
 .content {
   width: 1140px;
-  padding-top: 133px;
+  margin-top: 133px;
   display: flex;
   align-items: end;
   column-gap: 30px;
