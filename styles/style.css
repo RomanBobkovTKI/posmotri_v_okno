@@ -1,3 +1,8 @@
+:root {
+  --white-color: #fff;
+  --acent-title: #545050;
+}
+
 *,
 *::before,
 *::after {
@@ -35,4 +40,13 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+button {
+  border: none;
 }
